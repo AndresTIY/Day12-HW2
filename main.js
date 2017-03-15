@@ -30,6 +30,10 @@ marketWithIn10.forEach(function(currentItem, index, array){
 
 
 cats.data.forEach(function(current, index, array){
-  inputContainer.innerHTML = current.images.fixed_width_small.url;
-  // console.log(current.images.fixed_width_small.url);
+  inputContainer.innerHTML += '<img src="' + current.images.fixed_width_small.url + ' ">'
+;
 })
+
+
+
+// console.log(current.images.fixed_width_small.url);

@@ -18,22 +18,22 @@ var marketWithIn10 = marketArray.filter(function(currentItem, index, array){
   return index < 10;
 })
 
+var someWords = "1.2 Farmer's Market";
+var shifted = someWords.split(' ').shift();
+console.log(shifted)
+console.log(someWords)
+
+
 marketWithIn10.forEach(function(currentItem, index, array){
-    inputAns.innerHTML += '<li>'+ currentItem + '</li>';
+    inputAns.innerHTML += '<li>'+ currentItem.slice(4) + '</li>';
 })
 
 
 
-// console.log(catData)
-//catData.data[0].images.fixed_width_small is what we want to target
 
 
-
+//-------------CATS CATS CATS
 cats.data.forEach(function(current, index, array){
   inputContainer.innerHTML += '<img src="' + current.images.fixed_width_small.url + ' ">'
 ;
 })
-
-
-
-// console.log(current.images.fixed_width_small.url);
